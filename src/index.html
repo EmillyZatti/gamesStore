@@ -6,18 +6,47 @@
     <title>GamesStore</title>
 </head>
 <body class="bg-black text-white">
-   <header class="w-full h-32 grid grid-cols-2"> 
+
+    <!--cabecalho logado-->
+   <header class=" w-full h-32 grid grid-cols-3 items-center"> 
+    <!--COLUNA 1-->
         <div class="flex items-center pl-8">
             <img src="./assets/resources/images/logo.png">
         </div>
-        <div class="flex flex-col md:flex-row justify-center md:justify-end pr-8 md:items-center md:space-x-4 space-y-4 md:space-y-0">
-            <div class="flex justify-center">
-                <button class="btn bg-gray-500 rounded-md w-1/2 w-24 h-8 bg-pink-600 hover:bg-pink-400">Entrar</button>
+        <!--COLUNA 2-->
+            <div class="w-full flex justify-center">
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="http://127.0.0.1:5500/src/index.html">INÍCIO</a>
+                    </li> 
+                    <li>|</li>
+                    <li>BIBLIOTECA</li>
+                </ul>
             </div>
-            <div class="flex justify-center">
-                <button class="btn rounded-md w-1/2 w-32 h-8 bg-blue-600 hover:bg-blue-400">Registrar-se</button>
+
+            <div class="w-full flex justify-end">
+                <ul class="flex items-center pr-12 space-x-2">
+                    <li class="">RS 0,00</li>
+                    <li> <img src="/src/assets/resources/images/icone-usuario.png"></li>
+                    <li><img src="/src/assets/resources/images/seta.png"></li>
+                </ul>
+
             </div>
     </header>
+
+        <!--cabecalho deslogado-->
+   <header class="hidden w-full h-32 grid grid-cols-2"> 
+    <div class="flex items-center pl-8">
+        <img src="./assets/resources/images/logo.png">
+    </div>
+    <div class="flex flex-col md:flex-row justify-center md:justify-end pr-8 md:items-center md:space-x-4 space-y-4 md:space-y-0">
+        <div class="flex justify-center">
+            <button class="btn bg-gray-500 rounded-md w-1/2 w-24 h-8 bg-pink-600 hover:bg-pink-400">Entrar</button>
+        </div>
+        <div class="flex justify-center">
+            <button class="btn rounded-md w-1/2 w-32 h-8 bg-blue-600 hover:bg-blue-400">Registrar-se</button>
+        </div>
+</header>
 
     <!--Banner principal-->
     <div class="w-full">
@@ -146,14 +175,13 @@
             </div>
         </div>
             
-        <!--Rodapé-->
-        <div class="w-full text-xs my-20">
-            <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
-            <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
-        </div>
-
-
     </main>
+     
+    <!--Rodapé-->
+     <footer class="w-full text-xs my-20">
+        <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
+        <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
+    </footer>
 
   <script src="https://cdn.tailwindcss.com"></script>   
 </body>
