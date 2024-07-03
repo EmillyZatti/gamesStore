@@ -6,11 +6,11 @@ O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backen
 
 ## Endereço de Deploy - GitHub Pages
 
-https://utfpr-gp.github.io/roubank-css/
+https://github.com/EmillyZatti/gamesStore
 
 ## Protótipo
 
-https://www.figma.com/file/a1VDbO1aNfZyulQPxT99OE/beleza-em-dia?node-id=3%3A80
+https://www.figma.com/design/1854OBmIRlJ1ce9lQdYr4W/gamesStore?t=8NN3M9OS1abbqOLh-0
 
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
