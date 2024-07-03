@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GamesStore</title>
-</head>
-<body class="bg-gray-900 text-white">
-    <header class="w-full h-32 grid grid-cols-2"> 
-         <div class="flex items-center pl-8">
-             <img src="/src/assets/resources/images/logo.png">
-         </div>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="w-full h-32 grid grid-cols-2">
+      <div class="flex items-center pl-8">
+        <img src="/src/assets/resources/images/logo.png" />
+      </div>
     </header>
-    <form class="w-full h-screen flex justify-center">
-        <div class="flex items-center justify-center">
-            <div>
-                <div class="mb-10">
-                    <h1 class="text-5xl font-bold">Entrar</h1>
-                </div>
-                <div class="bg-black px-24 space-y-4 py-12 rounded-3xl w-[60rem]">   
-                    <div class="flex flex-col mr-16">
-                        <label for="input-usuario">Usuário</label>
-                        <input type="text" id="input-usuario" class="h-10 rounded-sm opacity-50"> 
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="input-senha">Senha</label>
-                        <input type="password" id="input-senha" class="h-10 rounded-sm opacity-50">
-                    </div>
-                    <div>
-                        <input type="checkbox" id="lembrar-senha" class="mr-2">Lembrar-me
-                    </div>
-                    <div class="flex justify-center">
-                        <button class=" bg-blue-600 hover:bg-blue-400 px-32 py-4">Entrar</button>
-                    </div>
-                </div>
+    <form id="login-usuario" class="w-full h-screen flex justify-center">
+      <div class="flex items-center justify-center">
+        <div>
+          <div class="mb-10">
+            <h1 class="text-5xl font-bold">Entrar</h1>
+          </div>
+          <div class="bg-black px-24 space-y-4 py-12 rounded-3xl w-[60rem]">
+            <div class="flex flex-col">
+              <label for="input-email">E-mail</label>
+              <input
+                type="text"
+                id="input-email"
+                class="h-10 rounded-sm opacity-50 text-black"
+              />
             </div>
+            <div class="flex flex-col">
+              <label for="input-senha">Senha</label>
+              <input
+                type="password"
+                id="input-senha"
+                class="h-10 rounded-sm opacity-50 text-black"
+              />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="lembrar-senha"
+                class="mr-2"
+              />Lembrar-me
+            </div>
+            <div class="flex justify-center">
+              <button class="bg-blue-600 hover:bg-blue-400 px-32 py-4">
+                Entrar
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </form>
-   
+
     <!--Rodapé-->
     <footer class="w-full text-xs my-20">
-        <div class="flex justify-center">
-            <button class=" bg-blue-600 hover:bg-blue-400 px-32 py-4 mb-10">Inscrever-se</button>
-        </div>
-        <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
-        <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
+      <div class="flex justify-center">
+        <button
+          id="inscricao"
+          class="bg-blue-600 hover:bg-blue-400 px-32 py-4 mb-10"
+        >
+          Inscrever-se
+        </button>
+      </div>
+      <p class="text-center">
+        2024 Valve Corporation. Todos os direitos reservados. Todas as marcas
+        comerciais são propriedade dos respetivos proprietários nos E.U.A. e
+        outros países.
+      </p>
+      <p class="text-center">
+        IVA incluído em todos os preços onde aplicável.   Política de
+        privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |  
+        Reembolsos   |   Cookies
+      </p>
     </footer>
 
-    
-         <script src="https://cdn.tailwindcss.com"></script>   
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
-
-
-.

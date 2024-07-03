@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "json-server --watch src/server/db.json"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   "homepage": "https://github.com/EmillyZatti/gamesStore#readme",
   "dependencies": {
     "jquery": "^3.7.1",
+    "jquery-mask": "^0.0.1-security",
+    "json-server": "^1.0.0-beta.1",
     "tailwindcss": "^3.4.3"
   }
 }

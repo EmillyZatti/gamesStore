@@ -1,64 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GamesStore</title>
-</head>
-<body class="bg-gray-800">
-    <header class="w-full h-32 bg-black grid grid-cols-2"> 
-        <div class="flex items-center pl-8">
-            <img src="/src/assets/resources/images/logo.png">
-        </div>
-   </header>
-   <main class="text-white mt-16">
-    <h1 class="text-5xl font-bold text-center">Cadastro</h1>
-    <form class="grid grid-cols-1 md:grid-cols-2 px-2 md:px-24 mt-16">
+  </head>
+  <body class="bg-gray-800">
+    <header class="w-full h-32 bg-black grid grid-cols-2">
+      <div class="flex items-center pl-8">
+        <img src="/src/assets/resources/images/logo.png" />
+      </div>
+    </header>
+    <main class="text-white mt-16">
+      <h1 class="text-5xl font-bold text-center">Cadastro</h1>
+      <form
+        id="formulario-registro"
+        class="grid grid-cols-1 md:grid-cols-2 px-2 md:px-24 mt-16"
+      >
         <div class="px-12 2xl:px-52 space-y-4 mr-16">
-            <div class="flex flex-col">
-                <label for="input-email">Endereço de e-mail</label>
-                <input type="text" id="input-email" class="h-10 rounded-sm opacity-50">
-            </div>
-            <div class="flex flex-col">
-                <label for="input-confirmacao-email">Confirme o e-mail</label>
-                <input type="text" id="input-confirmacao-email" class="h-10 rounded-sm opacity-50">
-            </div>
-            <div class="flex flex-col"> 
-                <label for="input-pais-residencia">País de residência</label>
-                <input type="text" id="input-pais-residencia" class="h-10 rounded-sm opacity-50">
-            </div>
+          <div class="flex flex-col">
+            <label for="input-email">Endereço de e-mail</label>
+            <input
+              required
+              type="text"
+              id="input-email"
+              pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]([a-z]+)?$"
+              class="h-10 rounded-sm text-black"
+            />
+            <span id="email-invalido" class="hidden text-sm text-red-500"
+              >E-mail inválido</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <label for="input-confirmacao-email">Confirme o e-mail</label>
+            <input
+              type="text"
+              id="input-confirmacao-email"
+              class="h-10 rounded-sm text-black"
+            />
+            <span id="email-divergente" class="hidden text-sm text-red-500"
+              >E-mails diferentes</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <label for="input-pais-residencia">País de residência</label>
+            <select
+              type="text"
+              id="input-pais-residencia"
+              class="h-10 rounded-sm text-black"
+            ></select>
+          </div>
         </div>
-             
+
         <div class="px-12 2xl:px-52 space-y-4 mr-16">
-            <div class="flex flex-col">
-                <label for="input-nome-usuario">Nome de usuário steam</label>
-                <input type="text" id="input-nome-usuario" class="h-10 rounded-sm opacity-50">
-            </div>
-            <div class="flex flex-col">
-                <label for="input-escolha-senha">Escolha uma senha</label>
-                <input type="text" id="input-escolha-senha" class="h-10 rounded-sm opacity-50">
-            </div>
-            <div class="flex flex-col">
-                <label for="input-confirme-senha">Confirme a senha</label>
-                <input type="text" id="input-confirme-senha" class="h-10 rounded-sm opacity-50"> 
-            </div>
+          <div class="flex flex-col">
+            <label for="input-nome-usuario">Nome de usuário steam</label>
+            <input
+              required
+              type="text"
+              id="input-nome-usuario"
+              class="h-10 rounded-sm text-black"
+            />
+            <span id="span-nome-usuario" class="hidden text-sm text-red-500"
+              >Informe o nome do usuario</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <label for="input-escolha-senha">Escolha uma senha</label>
+            <input
+              required
+              type="password"
+              id="input-escolha-senha"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              class="h-10 rounded-sm text-black"
+            />
+            <span id="senha-invalida" class="hidden text-sm text-red-500"
+              >Senha inválida</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <label for="input-confirme-senha">Confirme a senha</label>
+            <input
+              type="password"
+              id="input-confirme-senha"
+              class="h-10 rounded-sm text-black"
+            />
+            <span id="senha-divergente" class="hidden text-sm text-red-500"
+              >senhas diferentes</span
+            >
+          </div>
         </div>
         <div class="mt-12 pl-12 2xl:pl-52">
-            <input type="checkbox" id="concordo-termos">  I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.
+          <input type="checkbox" id="concordo-termos" /> I am 13 years of age or
+          older and agree to the terms of the Steam Subscriber Agreement and the
+          Valve Privacy Policy.
         </div>
         <div class="flex justify-center">
-            <button class=" bg-blue-600 hover:bg-blue-400 px-32 py-4 mt-20">Inscrever-se</button>
+          <button class="bg-blue-600 hover:bg-blue-400 px-32 py-4 mt-20">
+            Inscrever-se
+          </button>
         </div>
-    </form>
-</main>
+      </form>
+    </main>
 
-     <!--Rodapé-->
-     <footer class="w-full text-xs py-10 bg-black text-white md:fixed bottom-0">
-        
-        <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
-        <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
+    <!--Rodapé-->
+    <footer class="w-full text-xs py-10 bg-black text-white">
+      <p class="text-center">
+        2024 Valve Corporation. Todos os direitos reservados. Todas as marcas
+        comerciais são propriedade dos respetivos proprietários nos E.U.A. e
+        outros países.
+      </p>
+      <p class="text-center">
+        IVA incluído em todos os preços onde aplicável.   Política de
+        privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |  
+        Reembolsos   |   Cookies
+      </p>
     </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>  
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/src/assets/libraries/jquerymask.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>

@@ -1,191 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamesStore</title>
-</head>
-<body class="bg-black text-white">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GamesStore</title>
+    </head>
+    <body class="bg-black text-white">
 
-    <!--cabecalho logado-->
-   <header class="hidden w-full h-32 grid grid-cols-3 items-center"> 
-    <!--COLUNA 1-->
+        <!--CABECALHO LOGADO-->
+    <header id="header-logado" class="hidden w-full h-32 grid grid-cols-3 items-center"> 
+        <!--COLUNA 1-->
+            <div class="flex items-center pl-8">
+                <img src="./assets/resources/images/logo.png">
+            </div>
+            <!--COLUNA 2-->
+                <div class="w-full flex justify-center">
+                    <ul class="flex space-x-4">
+                        <li>
+                            INÍCIO
+                        </li> 
+                        <li>|</li>
+                        <li> <a href="/src/app/pages/Biblioteca/index.html">BIBLIOTECA</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full flex justify-end">
+                    <ul class="flex items-center pr-12 space-x-2">
+                        <li class="">RS 0,00</li>
+                        <li> <a href="/src/app/pages/Meu-Perfil/index.html">
+                            <img src="/src/assets/resources/images/icone-usuario.png"></a></li>
+                        <li><img src="/src/assets/resources/images/seta.png"></li>
+                    </ul>
+
+                </div>
+        </header>
+
+            <!--CABECALHO DESLOGADO-->
+    <header id="header-deslogado" class=" w-full h-32 grid grid-cols-2"> 
+        <!--COLUNA 1-->
         <div class="flex items-center pl-8">
             <img src="./assets/resources/images/logo.png">
         </div>
         <!--COLUNA 2-->
-            <div class="w-full flex justify-center">
-                <ul class="flex space-x-4">
-                    <li>
-                        <a href="http://127.0.0.1:5500/src/index.html">INÍCIO</a>
-                    </li> 
-                    <li>|</li>
-                    <li>BIBLIOTECA</li>
-                </ul>
+        <div class="flex flex-col md:flex-row justify-center md:justify-end pr-8 md:items-center md:space-x-4 space-y-4 md:space-y-0">
+            <div class="flex justify-center">
+                <button  id="entrar" 
+                class="btn bg-gray-500 rounded-md w-1/2 w-24 h-8 bg-pink-600 hover:bg-pink-400">Entrar</button>
             </div>
-
-            <div class="w-full flex justify-end">
-                <ul class="flex items-center pr-12 space-x-2">
-                    <li class="">RS 0,00</li>
-                    <li> <img src="/src/assets/resources/images/icone-usuario.png"></li>
-                    <li><img src="/src/assets/resources/images/seta.png"></li>
-                </ul>
-
+            <div class="flex justify-center">
+                <button  id="registrar"
+                class="btn rounded-md w-1/2 w-32 h-8 bg-blue-600 hover:bg-blue-400">Registrar-se</button>
             </div>
     </header>
 
-        <!--cabecalho deslogado-->
-   <header class=" w-full h-32 grid grid-cols-2"> 
-    <div class="flex items-center pl-8">
-        <img src="./assets/resources/images/logo.png">
-    </div>
-    <div class="flex flex-col md:flex-row justify-center md:justify-end pr-8 md:items-center md:space-x-4 space-y-4 md:space-y-0">
-        <div class="flex justify-center">
-            <button class="btn bg-gray-500 rounded-md w-1/2 w-24 h-8 bg-pink-600 hover:bg-pink-400">Entrar</button>
+        <!--BANNER PRINCIPAL-->
+        <div class="w-full">
+            <img src="./assets/resources/images/imagem-principal.png">    
         </div>
-        <div class="flex justify-center">
-            <button class="btn rounded-md w-1/2 w-32 h-8 bg-blue-600 hover:bg-blue-400">Registrar-se</button>
-        </div>
-</header>
-
-    <!--Banner principal-->
-    <div class="w-full">
-        <img src="./assets/resources/images/imagem-principal.png">    
-    </div>
-    
-    <!--Cards Principais-->
-    <main class="w-full">
-        <div class="flex justify-center px-4 flex-col lg:flex-row items-center -mt-6 md:-mt-16 2xl:-mt-24 space-y-4 lg:space-y-0 lg:space-x-6">
-                
-            <div class="px-32 md:px-12 lg:px-0"> 
-                <img src="./assets/resources/images/card-ark.png">
-            </div>  
         
-            <div class="px-32 md:px-12 lg:px-0">
-                <img src="./assets/resources/images/card-fifa.png">
-            </div>   
-      
-            <div class="px-32 md:px-12 lg:px-0">   
-                <img src="./assets/resources/images/card-gta.png">
-            </div> 
-          
-        </div>
-
-        <!--Divulgação-->
-        <div class="w-full  mt-12 lg:mt-44 px-4 flex justify-center">
-            <img src="./assets/resources/images/Divulgacao.png">
-        </div>
-
-        <!--Cards-->
-        <div class="w-full flex justify-center px-4 mt-16 lg:mt-60 space-x-6">
-            <div class="">
-                <img src="./assets/resources/images/cyberpunk.png">
-            </div>
-            <div class="">
-                <img src="./assets/resources/images/skyrim.png">
-            </div>
-            <div class="">
-                <img src="./assets/resources/images/call-of-duty.png">
-            </div>
-            <div>
-                <img src="./assets/resources/images/lies-of-p.png">
-            </div>
-        </div>
-
-        <!--Séries em Destaque-->
-        <div class="w-full flex justify-center mt-8 lg:mt-16">
-            <h1 class="text-md lg:text-2xl font-medium">SÉRIES EM DESTAQUE</h1>
-        </div>
-        <div class="flex justify-center mt-8 lg:mt-16 px-4 flex-col lg:flex-row items-center  space-y-4 lg:space-y-0 lg:space-x-6">
-            <div class="px-32 md:px-12 lg:px-0">    
-                <img src="./assets/resources/images/card-dragon-ball.png">
-            </div>
-
-            <div class="px-32 md:px-12 lg:px-0">
-                <img src="./assets/resources/images/card-company-heroes.png">
-            </div>   
-        </div>
-
-        <!--Jogos Secundários-->
-        <div class="flex justify-center -mt-16">
-            <div class="w-2/3 grid grid-cols-2 lg:grid-cols-4 mt-32 px-2">
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/100-march-cats.png">
-                </div>
-                
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/alpha-league.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/buindog.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/please-touch.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/helldivers.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/egg.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/trans-siberian.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/fadinha-azul.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/100-asian-cats.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/house-flipper.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/ready-or-not.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/taora.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/galactic-civi.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/tony-hawk.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/cocoon.png">
-                </div>
-
-                <div class="flex justify-center">
-                    <img src="./assets/resources/images/wolvesville.png">
-                </div>
-            </div>
-        </div>
+        <!--CARDS PRINCIPAIS-->
+        <main class="w-full">
+            <div class="flex justify-center px-4 flex-col lg:flex-row items-center -mt-6 md:-mt-16 2xl:-mt-24 space-y-4 lg:space-y-0 lg:space-x-6">
+                    
+                <div class="px-32 md:px-12 lg:px-0"> 
+                    <img src="./assets/resources/images/card-ark.png">
+                </div>  
             
-    </main>
-     
-    <!--Rodapé-->
-     <footer class="w-full text-xs my-20">
-        <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
-        <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
-    </footer>
+                <div class="px-32 md:px-12 lg:px-0">
+                    <img src="./assets/resources/images/card-fifa.png">
+                </div>   
+        
+                <div class="px-32 md:px-12 lg:px-0">   
+                    <img src="./assets/resources/images/card-gta.png">
+                </div> 
+            
+            </div>
 
-  <script src="https://cdn.tailwindcss.com"></script>   
+            <!--DIVULGAÇÃO-->
+            <div class="w-full  mt-12 lg:mt-44 px-4 flex justify-center">
+                <img src="./assets/resources/images/Divulgacao.png">
+            </div>
+
+            <!--CARDS-->
+            <div class="w-full flex justify-center px-4 mt-16 lg:mt-60 space-x-6">
+                <div class="">
+                    <img src="./assets/resources/images/cyberpunk.png">
+                </div>
+                <div class="">
+                    <img src="./assets/resources/images/skyrim.png">
+                </div>
+                <div class="">
+                    <img src="./assets/resources/images/call-of-duty.png">
+                </div>
+                <div>
+                    <img src="./assets/resources/images/lies-of-p.png">
+                </div>
+            </div>
+
+            <!--SÉRIES EM DESTAQUE-->
+            <div class="w-full flex justify-center mt-8 lg:mt-16">
+                <h1 class="text-md lg:text-2xl font-medium">SÉRIES EM DESTAQUE</h1>
+            </div>
+            <div class="flex justify-center mt-8 lg:mt-16 px-4 flex-col lg:flex-row items-center  space-y-4 lg:space-y-0 lg:space-x-6">
+                <div class="px-32 md:px-12 lg:px-0">    
+                    <img src="./assets/resources/images/card-dragon-ball.png">
+                </div>
+
+                <div class="px-32 md:px-12 lg:px-0">
+                    <img src="./assets/resources/images/card-company-heroes.png">
+                </div>   
+            </div>
+            <!--JOGOS SECUNDÁRIOS-->
+            <div class="flex justify-center -mt-16">
+                <div class="w-2/3 grid grid-cols-2 lg:grid-cols-4 mt-32 px-2">
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/100-march-cats.png">
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/alpha-league.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/buindog.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/please-touch.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/helldivers.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/egg.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/trans-siberian.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/fadinha-azul.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/100-asian-cats.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/house-flipper.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/ready-or-not.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/taora.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/galactic-civi.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/tony-hawk.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/cocoon.png">
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="./assets/resources/images/wolvesville.png">
+                    </div>
+                </div>
+            </div>
+                
+        </main>
+        
+        <!--RODAPÉ-->
+        <footer class="w-full text-xs my-20">
+            <p class="text-center">2024 Valve Corporation. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</p>
+            <p class="text-center">IVA incluído em todos os preços onde aplicável.   Política de privacidade   |   Termos legais   |   Acordo de Subscrição Steam   |   Reembolsos   |   Cookies</p>
+        </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>   
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
-
-
-.

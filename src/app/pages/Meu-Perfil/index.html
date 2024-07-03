@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GamesStore</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-black text-white">
     <header
@@ -19,40 +18,54 @@
       <div class="w-full flex justify-center">
         <ul class="flex space-x-4">
           <li>
-            <a href="/src/index.html">INÍCIO</a>
+            <a href="http://127.0.0.1:5500/src/index.html">INÍCIO</a>
           </li>
           <li>|</li>
-          <li>BIBLIOTECA</li>
+          <li><a href="/src/app/pages/Biblioteca/index.html">BIBLIOTECA</a></li>
         </ul>
       </div>
 
       <div class="w-full flex justify-end">
         <ul class="flex items-center pr-12 space-x-2">
           <li class="">RS 0,00</li>
-          <li>
-            <a href="/src/app/pages/Meu-Perfil/index.html">
-              <img src="/src/assets/resources/images/icone-usuario.png"
-            /></a>
-          </li>
+          <li><img src="/src/assets/resources/images/icone-usuario.png" /></li>
           <li><img src="/src/assets/resources/images/seta.png" /></li>
         </ul>
       </div>
     </header>
+    <main class="bg-gray-800 grid place-items-center py-12">
+      <h1 class="text-white text-2xl font-bold mb-4">Meu Perfil</h1>
 
-    <main class="grid-container">
-      <div>
-        <img src="/src/assets/resources/images/100-march-cats.png" />
-      </div>
-      <div>
-        <img src="/src/assets/resources/images/fadinha-azul.png" />
+      <div class="text-white mb-4">
+        <label for="input-usuario" class="block">Usuario</label>
+        <input
+          id="input-usuario"
+          type="text"
+          class="px-4 py-2 border rounded-md w-64 bg-gray-700 text-white"
+        />
       </div>
 
-      <div>
-        <img src="/src/assets/resources/images/cocoon.png" />
+      <div class="text-white mb-4">
+        <label for="e-mail" class="block">E-mail</label>
+        <input
+          id="e-mail"
+          type="text"
+          class="px-4 py-2 border rounded-md w-64 bg-gray-700 text-white"
+        />
       </div>
+
+      <div class="text-white mb-4">
+        <label for="pais" class="block">Pais</label>
+        <input
+          id="pais"
+          type="text"
+          class="px-4 py-2 border rounded-md w-64 bg-gray-700 text-white"
+        />
+      </div>
+      <button id="botao-sair" class="bg-red-500 w-64">SAIR</button>
     </main>
 
-    <footer class="w-full text-xs my-20 bottom-0 fixed">
+    <footer class="w-full text-xs my-20">
       <p class="text-center">
         2024 Valve Corporation. Todos os direitos reservados. Todas as marcas
         comerciais são propriedade dos respetivos proprietários nos E.U.A. e
@@ -65,5 +78,6 @@
       </p>
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
